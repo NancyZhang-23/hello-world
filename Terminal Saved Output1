@@ -1,0 +1,384 @@
+Last login: Sun Mar 28 22:16:56 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) nancyzhangdeMacBook-Pro:~ nancyzhang$ conda activate spyder_env
+Could not find conda environment: spyder_env
+You can list all discoverable environments with `conda info --envs`.
+
+(base) nancyzhangdeMacBook-Pro:~ nancyzhang$ conda info --envs
+# conda environments:
+#
+base                  *  /Users/nancyzhang/opt/anaconda3
+spyder-env               /Users/nancyzhang/opt/anaconda3/envs/spyder-env
+
+(base) nancyzhangdeMacBook-Pro:~ nancyzhang$ conda activate spyder-env
+(spyder-env) nancyzhangdeMacBook-Pro:~ nancyzhang$ conda install pytorch torchvision -c pytorch
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /Users/nancyzhang/opt/anaconda3/envs/spyder-env
+
+  added / updated specs:
+    - pytorch
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2021.1.19  |       hecd8cb5_1         118 KB
+    ffmpeg-4.3                 |       h0a44026_0        10.1 MB  pytorch
+    gmp-6.2.1                  |       h23ab428_2         512 KB
+    gnutls-3.6.5               |    h91ad68e_1002         1.6 MB
+    lame-3.100                 |       h1de35cc_0         316 KB
+    libuv-1.40.0               |       haf1e3a3_0         334 KB
+    nettle-3.4.1               |       h3018a27_0         604 KB
+    ninja-1.10.2               |   py37hf7b0b51_0         101 KB
+    openh264-2.1.0             |       hd9629dc_0         635 KB
+    openssl-1.1.1k             |       h9ed2024_0         2.2 MB
+    pytorch-1.8.1              |          py3.7_0        71.9 MB  pytorch
+    torchvision-0.9.1          |         py37_cpu         6.8 MB  pytorch
+    ------------------------------------------------------------
+                                           Total:        95.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/osx-64::bzip2-1.0.8-h1de35cc_0
+  ffmpeg             pytorch/osx-64::ffmpeg-4.3-h0a44026_0
+  gmp                pkgs/main/osx-64::gmp-6.2.1-h23ab428_2
+  gnutls             pkgs/main/osx-64::gnutls-3.6.5-h91ad68e_1002
+  lame               pkgs/main/osx-64::lame-3.100-h1de35cc_0
+  libuv              pkgs/main/osx-64::libuv-1.40.0-haf1e3a3_0
+  nettle             pkgs/main/osx-64::nettle-3.4.1-h3018a27_0
+  ninja              pkgs/main/osx-64::ninja-1.10.2-py37hf7b0b51_0
+  openh264           pkgs/main/osx-64::openh264-2.1.0-hd9629dc_0
+  pytorch            pytorch/osx-64::pytorch-1.8.1-py3.7_0
+  torchvision        pytorch/osx-64::torchvision-0.9.1-py37_cpu
+
+The following packages will be UPDATED:
+
+  ca-certificates                      2021.1.19-hecd8cb5_0 --> 2021.1.19-hecd8cb5_1
+  openssl                                 1.1.1j-h9ed2024_0 --> 1.1.1k-h9ed2024_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+ffmpeg-4.3           | 10.1 MB   | ##################################### | 100% 
+openssl-1.1.1k       | 2.2 MB    | ##################################### | 100% 
+ca-certificates-2021 | 118 KB    | ##################################### | 100% 
+lame-3.100           | 316 KB    | ##################################### | 100% 
+ninja-1.10.2         | 101 KB    | ##################################### | 100% 
+gmp-6.2.1            | 512 KB    | ##################################### | 100% 
+torchvision-0.9.1    | 6.8 MB    | ##################################### | 100% 
+libuv-1.40.0         | 334 KB    | ##################################### | 100% 
+nettle-3.4.1         | 604 KB    | ##################################### | 100% 
+gnutls-3.6.5         | 1.6 MB    | ##################################### | 100% 
+pytorch-1.8.1        | 71.9 MB   | ##################################### | 100% 
+openh264-2.1.0       | 635 KB    | ##################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(spyder-env) nancyzhangdeMacBook-Pro:~ nancyzhang$ cd "/Users/nancyzhang/Desktop/UCLA/Research/MATLAB_R2021a.app/extern/engines/python"
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ python setup.py install
+running install
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/matlab
+copying dist/matlab/mlarray.py -> build/lib/matlab
+copying dist/matlab/__init__.py -> build/lib/matlab
+copying dist/matlab/mlexceptions.py -> build/lib/matlab
+creating build/lib/matlab/engine
+copying dist/matlab/engine/fevalfuture.py -> build/lib/matlab/engine
+copying dist/matlab/engine/matlabengine.py -> build/lib/matlab/engine
+copying dist/matlab/engine/basefuture.py -> build/lib/matlab/engine
+copying dist/matlab/engine/__init__.py -> build/lib/matlab/engine
+copying dist/matlab/engine/matlabfuture.py -> build/lib/matlab/engine
+copying dist/matlab/engine/futureresult.py -> build/lib/matlab/engine
+copying dist/matlab/engine/enginehelper.py -> build/lib/matlab/engine
+copying dist/matlab/engine/engineerror.py -> build/lib/matlab/engine
+copying dist/matlab/engine/enginesession.py -> build/lib/matlab/engine
+creating build/lib/matlab/_internal
+copying dist/matlab/_internal/mlarray_sequence.py -> build/lib/matlab/_internal
+copying dist/matlab/_internal/mlarray_utils.py -> build/lib/matlab/_internal
+copying dist/matlab/_internal/__init__.py -> build/lib/matlab/_internal
+running install_lib
+creating /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab
+creating /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/_internal/mlarray_sequence.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/_internal/mlarray_utils.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/_internal/__init__.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/mlarray.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab
+copying build/lib/matlab/__init__.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab
+creating /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/fevalfuture.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/matlabengine.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/basefuture.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/__init__.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/matlabfuture.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/_arch.txt -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/futureresult.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/enginehelper.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/engineerror.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/enginesession.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/mlexceptions.py -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/_internal/mlarray_sequence.py to mlarray_sequence.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/_internal/mlarray_utils.py to mlarray_utils.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/_internal/__init__.py to __init__.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/mlarray.py to mlarray.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/__init__.py to __init__.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine/fevalfuture.py to fevalfuture.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine/matlabengine.py to matlabengine.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine/basefuture.py to basefuture.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine/__init__.py to __init__.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine/matlabfuture.py to matlabfuture.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine/futureresult.py to futureresult.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine/enginehelper.py to enginehelper.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine/engineerror.py to engineerror.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine/enginesession.py to enginesession.cpython-37.pyc
+byte-compiling /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/mlexceptions.py to mlexceptions.cpython-37.pyc
+running install_egg_info
+Writing /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlabengineforpython-R2021a-py3.7.egg-info
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ cd "/Users/nancyzhang/Desktop/UCLA/Research/MATLAB_R2021a.app/extern/engines/python"
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ python setup.py install --prefix="/Users/nancyzhang/Desktop/UCLA/Research"
+running install
+running build
+running build_py
+running install_lib
+creating /Users/nancyzhang/Desktop/UCLA/Research/lib
+creating /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7
+creating /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages
+creating /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab
+creating /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/_internal/mlarray_sequence.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/_internal/mlarray_utils.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/_internal/__init__.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/mlarray.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab
+copying build/lib/matlab/__init__.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab
+creating /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/fevalfuture.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/matlabengine.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/basefuture.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/__init__.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/matlabfuture.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/_arch.txt -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/futureresult.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/enginehelper.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/engineerror.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/enginesession.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/mlexceptions.py -> /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal/mlarray_sequence.py to mlarray_sequence.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal/mlarray_utils.py to mlarray_utils.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal/__init__.py to __init__.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/mlarray.py to mlarray.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/__init__.py to __init__.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/fevalfuture.py to fevalfuture.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/matlabengine.py to matlabengine.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/basefuture.py to basefuture.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/__init__.py to __init__.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/matlabfuture.py to matlabfuture.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/futureresult.py to futureresult.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/enginehelper.py to enginehelper.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/engineerror.py to engineerror.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/enginesession.py to enginesession.cpython-37.pyc
+byte-compiling /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/mlexceptions.py to mlexceptions.cpython-37.pyc
+running install_egg_info
+Writing /Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlabengineforpython-R2021a-py3.7.egg-info
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ sys.path.append("/Users/nancyzhang/Desktop/UCLA/Research")
+-bash: syntax error near unexpected token `"/Users/nancyzhang/Desktop/UCLA/Research"'
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ python setup.py install
+running install
+running build
+running build_py
+running install_lib
+copying build/lib/matlab/engine/_arch.txt -> /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlab/engine
+running install_egg_info
+Removing /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlabengineforpython-R2021a-py3.7.egg-info
+Writing /Users/nancyzhang/opt/anaconda3/envs/spyder-env/lib/python3.7/site-packages/matlabengineforpython-R2021a-py3.7.egg-info
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ sys.path.append("/Users/nancyzhang/opt/anaconda3/envs/spyder-env/UCLA/Research")
+-bash: syntax error near unexpected token `"/Users/nancyzhang/opt/anaconda3/envs/spyder-env/UCLA/Research"'
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ cd "/Users/nancyzhang/Desktop/UCLA/Research/MATLAB_R2021a.app/extern/engines/python"
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ python setup.py install --prefix="Users/nancyzhang/Desktop/UCLA/Research"
+running install
+running build
+running build_py
+running install_lib
+creating Users
+creating Users/nancyzhang
+creating Users/nancyzhang/Desktop
+creating Users/nancyzhang/Desktop/UCLA
+creating Users/nancyzhang/Desktop/UCLA/Research
+creating Users/nancyzhang/Desktop/UCLA/Research/lib
+creating Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7
+creating Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages
+creating Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab
+creating Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/_internal/mlarray_sequence.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/_internal/mlarray_utils.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/_internal/__init__.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal
+copying build/lib/matlab/mlarray.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab
+copying build/lib/matlab/__init__.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab
+creating Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/fevalfuture.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/matlabengine.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/basefuture.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/__init__.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/matlabfuture.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/_arch.txt -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/futureresult.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/enginehelper.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/engineerror.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/engine/enginesession.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine
+copying build/lib/matlab/mlexceptions.py -> Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal/mlarray_sequence.py to mlarray_sequence.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal/mlarray_utils.py to mlarray_utils.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/_internal/__init__.py to __init__.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/mlarray.py to mlarray.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/__init__.py to __init__.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/fevalfuture.py to fevalfuture.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/matlabengine.py to matlabengine.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/basefuture.py to basefuture.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/__init__.py to __init__.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/matlabfuture.py to matlabfuture.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/futureresult.py to futureresult.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/enginehelper.py to enginehelper.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/engineerror.py to engineerror.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/engine/enginesession.py to enginesession.cpython-37.pyc
+byte-compiling Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlab/mlexceptions.py to mlexceptions.cpython-37.pyc
+running install_egg_info
+Writing Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7/site-packages/matlabengineforpython-R2021a-py3.7.egg-info
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ sys.path.append("/Users/nancyzhang/Desktop/UCLA/Research")
+-bash: syntax error near unexpected token `"/Users/nancyzhang/Desktop/UCLA/Research"'
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ sys.path.append("Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7")
+-bash: syntax error near unexpected token `"Users/nancyzhang/Desktop/UCLA/Research/lib/python3.7"'
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ git --version
+git version 2.15.0
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ git config --get user.name
+Nancy Zhang
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ git config --get user.email
+zhangnancy1127@gmail.com
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ pwd
+/Users/nancyzhang/Desktop/UCLA/Research/MATLAB_R2021a.app/extern/engines/python
+(spyder-env) nancyzhangdeMacBook-Pro:python nancyzhang$ conda activate base
+(base) nancyzhangdeMacBook-Pro:python nancyzhang$ git --version
+git version 2.15.0
+(base) nancyzhangdeMacBook-Pro:python nancyzhang$ git config --get user.name
+Nancy Zhang
+(base) nancyzhangdeMacBook-Pro:python nancyzhang$ git config --get user.email
+zhangnancy1127@gmail.com
+(base) nancyzhangdeMacBook-Pro:python nancyzhang$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+(base) nancyzhangdeMacBook-Pro:python nancyzhang$ pwd
+/Users/nancyzhang/Desktop/UCLA/Research/MATLAB_R2021a.app/extern/engines/python
+(base) nancyzhangdeMacBook-Pro:python nancyzhang$ cd ~
+(base) nancyzhangdeMacBook-Pro:~ nancyzhang$ pwd
+/Users/nancyzhang
+(base) nancyzhangdeMacBook-Pro:~ nancyzhang$ cd ~/Desktop/UCLA/Sophomore Spring/Stats 21
+-bash: cd: /Users/nancyzhang/Desktop/UCLA/Sophomore: No such file or directory
+(base) nancyzhangdeMacBook-Pro:~ nancyzhang$ cd ~/Desktop/UCLA/SophomoreSpring/Stats21
+-bash: cd: /Users/nancyzhang/Desktop/UCLA/SophomoreSpring/Stats21: No such file or directory
+(base) nancyzhangdeMacBook-Pro:~ nancyzhang$ cd ~/Desktop/UCLA/SophomoreSpring/Stats21
+(base) nancyzhangdeMacBook-Pro:Stats21 nancyzhang$ ssh-keygen -t ed25519 -C "zhangnancy1127@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/Users/nancyzhang/.ssh/id_ed25519): 
+/Users/nancyzhang/.ssh/id_ed25519 already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/nancyzhang/.ssh/id_ed25519.
+Your public key has been saved in /Users/nancyzhang/.ssh/id_ed25519.pub.
+The key fingerprint is:
+SHA256:YqHamnDRg40ZX2it4xQyvA3oq+26tajS8zNnovS/seU zhangnancy1127@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+| o   o           |
+|. * + +          |
+|.  / = .         |
+| .* @ o S        |
+|  .* + .         |
+|.o= o . .        |
+|oBo=+ o=         |
+|O+B+oB+.E        |
++----[SHA256]-----+
+(base) nancyzhangdeMacBook-Pro:Stats21 nancyzhang$ pwd
+/Users/nancyzhang/Desktop/UCLA/SophomoreSpring/Stats21
+(base) nancyzhangdeMacBook-Pro:Stats21 nancyzhang$ cd .ssh
+-bash: cd: .ssh: No such file or directory
+(base) nancyzhangdeMacBook-Pro:Stats21 nancyzhang$ cd ~/.ssh
+(base) nancyzhangdeMacBook-Pro:.ssh nancyzhang$ ls
+config		id_ed25519	id_ed25519.pub	known_hosts
+(base) nancyzhangdeMacBook-Pro:.ssh nancyzhang$ cat id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDYXMW7pRykpD2QP7YY4WcxBecv3Fal9LcxbEbPeiEOa zhangnancy1127@gmail.com
+(base) nancyzhangdeMacBook-Pro:.ssh nancyzhang$ cd ~
+(base) nancyzhangdeMacBook-Pro:~ nancyzhang$ pwd
+/Users/nancyzhang
+(base) nancyzhangdeMacBook-Pro:~ nancyzhang$ cd Desktop/UCLA/SophomoreSpring/Stats21
+(base) nancyzhangdeMacBook-Pro:Stats21 nancyzhang$ git clone git@github.com:NancyZhang-23/hello-world.git
+Cloning into 'hello-world'...
+The authenticity of host 'github.com (192.30.255.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,192.30.255.112' (RSA) to the list of known hosts.
+Enter passphrase for key '/Users/nancyzhang/.ssh/id_ed25519': 
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (7/7), done.
+(base) nancyzhangdeMacBook-Pro:Stats21 nancyzhang$ ls
+hello-world	week 1
+(base) nancyzhangdeMacBook-Pro:Stats21 nancyzhang$ cd hello-world
+(base) nancyzhangdeMacBook-Pro:hello-world nancyzhang$ ls
+README.md
+(base) nancyzhangdeMacBook-Pro:hello-world nancyzhang$ cat README.md
+# hello-world
+first repository
+
+Hello world! This is my first time to come here. It'll be an exciting journey!
+I had pizza tonight.
+(base) nancyzhangdeMacBook-Pro:hello-world nancyzhang$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) nancyzhangdeMacBook-Pro:hello-world nancyzhang$ touch file1.txt
+(base) nancyzhangdeMacBook-Pro:hello-world nancyzhang$ ls
+README.md	file1.txt
+(base) nancyzhangdeMacBook-Pro:hello-world nancyzhang$ nano file1.txt
+(base) nancyzhangdeMacBook-Pro:hello-world nancyzhang$ nano README.md
+
+  GNU nano 2.0.6              File: README.md                         Modified  
+
+# hello-world
+first repository
+
+Hello world! This is my first time to come here. It'll be an exciting journey!
+I had pizza tonight.
+Edited the file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        [ XOFF ignored, mumble mumble ]
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Page ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where Is  ^V Next Page ^U UnCut Text^T To Spell
